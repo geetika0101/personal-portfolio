@@ -3,6 +3,9 @@ import { ProjectCard } from "./ProjectCard";
 import cauldron from "../assets/img/cauldron.png";
 import deathlyhallows from "../assets/img/deathlyhallows.png";
 import history from "../assets/img/history.png";
+import crystalball from "../assets/img/crystalball.png";
+import language from "../assets/img/language.png";
+import capricorn from "../assets/img/capricorn.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -29,19 +32,19 @@ export const Projects = () => {
     {
       title: "Chrome Extension",
       description: "Design & Development",
-      imgUrl: history,
+      imgUrl: capricorn,
     }
   ]
   const projectsTab3 =[
     {
       title: "Project X(Return Forecaster)",
       description: "Design & Development",
-      imgUrl: history,
+      imgUrl: crystalball,
     },
     {
       title: "OCR",
       description: "Design & Development",
-      imgUrl: history,
+      imgUrl: language,
     },
   ];
 
