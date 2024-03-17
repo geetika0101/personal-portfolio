@@ -16,7 +16,7 @@ const contactEmail = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: "geetikav0101@gmail.com",
-    pass: "qwkl mvwy jrse djbd"
+    pass: "nuqz dtfg tnga cjrr"
   },
 });
 
