@@ -29,7 +29,7 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await fetch("https://react-mailing-form-5f11.onrender.com/api/contact", {
+    let response = await fetch("https://geetikavalecha.netlify.app/contact-api", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
