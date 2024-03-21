@@ -8,10 +8,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use("/", router);
-app.listen(5001, () => console.log("Server Running"));
 console.log(process.env.EMAIL_USER);
 console.log(process.env.EMAIL_PASS);
 
+
+const PORT = process.env.PORT || 3001;
 const contactEmail = nodemailer.createTransport({
   service: 'gmail',
   auth: {
@@ -50,3 +51,8 @@ router.post("/contact-api", (req, res) => {
     }
   });
 });
+
+// Showing that the server is up and running
+app.listen(PORT, () => {
+  console.log(`Server is online on port: ${PORT}`)
+})
